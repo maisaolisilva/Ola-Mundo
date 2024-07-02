@@ -1,6 +1,6 @@
 import styles from './Banner.module.css';
-import circulo from '../../assets/circuloColorido.svg';
-import minhaFoto from '../../assets/minhaFoto.jpg';
+import circulo from 'assets/circuloColorido.svg';
+import minhaFoto from 'assets/minhaFoto.jpg';
 
 function Banner() {
 
