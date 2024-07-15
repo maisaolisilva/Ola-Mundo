@@ -8,8 +8,11 @@ function Banner() {
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
                 <h1 className={styles.titulo}>Olá, Mundo!</h1>
-                <p className={styles.paragrafo}>
+                <h2 className={styles.titulo_secundario}>
                     Boas vindas ao meu espaço pessoal!
+                </h2>
+                <p className={styles.paragrafo}>
+                    Aqui apresento meu portifólio e alguns artigos sobre tecnologia.
                 </p>
             </div>
 

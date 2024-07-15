@@ -1,7 +1,7 @@
 .banner {
     padding: 3rem 7.5rem 6.25rem;
     background-color: var(--cinza-escuro);
-    color: var(--branco);
+    color: var(--verde);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -13,10 +13,18 @@
     margin-bottom: 2rem;
     color: var(--verde);
 }
+
+.titulo_secundario {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    color: var(--verde);    
+}
  
 .paragrafo {
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     margin-bottom: 2rem;
     color: var(--verde);
