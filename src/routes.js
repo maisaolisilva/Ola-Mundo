@@ -6,7 +6,7 @@ import Menu from "./componentes/Menu";
 import JavaScript from "./paginas/JavaScript";
 import Rodape from "componentes/Rodape";
 import PaginaPadrao from "componentes/PaginaPadrao";
-import Naruto from "paginas/Naruto";
+import Post from "paginas/Post";
 
 function AppRoutes() {
   
@@ -19,6 +19,8 @@ function AppRoutes() {
           <Route index element={<Inicio />}/>
           <Route path="/sobremim" element={<SobreMim />}/>
           <Route path="/javascript" element={<JavaScript />}/>
+          {/*:id significa que vai pegar o que o usuário degitar na url e atribuir ao objeto id*/}
+          <Route path="/posts/:id" element={<Post />} />
         </Route>
         <Route path="*" element={<div>Página não encontrada</div>}/>
       </Routes>

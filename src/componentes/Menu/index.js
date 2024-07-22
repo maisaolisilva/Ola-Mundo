@@ -11,7 +11,6 @@ function Menu() {
                 <MenuLink path="/" texto="Início" />
                 <MenuLink path="/sobremim" texto="Sobre Mim" />
                 <MenuLink path="/javascript" texto="JavaScript" />
-                <MenuLink path="/naruto" texto="Naruto" />
             </nav>
         </header>
     )
