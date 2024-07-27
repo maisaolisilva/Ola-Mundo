@@ -7,11 +7,14 @@ import JavaScript from "./paginas/JavaScript";
 import Rodape from "componentes/Rodape";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import Post from "paginas/Post";
+import NaoEncontrada from "paginas/NaoEncontrada";
+import ScrollToTop from "componentes/ScrollToTop";
 
 function AppRoutes() {
   
   return (
     <BrowserRouter >
+      <ScrollToTop />
       <Menu />
       <Routes>
         {/*Rotas aninhadas (rota "pai" e seus "filhos") */}
@@ -19,10 +22,10 @@ function AppRoutes() {
           <Route index element={<Inicio />}/>
           <Route path="/sobremim" element={<SobreMim />}/>
           <Route path="/javascript" element={<JavaScript />}/>
-          {/*:id significa que vai pegar o que o usuário degitar na url e atribuir ao objeto id*/}
-          <Route path="/posts/:id" element={<Post />} />
         </Route>
-        <Route path="*" element={<div>Página não encontrada</div>}/>
+        {/*:id significa que vai pegar o que o usuário degitar na url e atribuir ao objeto id*/}
+        <Route path="/posts/:id/*" element={<Post />} />
+        <Route path="*" element={<NaoEncontrada />}/>
       </Routes>
       <Rodape />
     </BrowserRouter>
